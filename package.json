@@ -1,0 +1,28 @@
+{
+  "name": "pokedex-typescript",
+  "version": "2.0.0",
+  "description": "Mini projeto SCTEC - Pokédex Lite com Node.js, TypeScript e PostgreSQL",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "dev": "tsx src/main.ts",
+    "build": "tsc",
+    "db:create": "tsx src/database/criarBanco.ts",
+    "db:migrate": "tsx src/database/migrate.ts",
+    "db:reset": "tsx src/database/migrate.ts --reset",
+    "db:seed": "tsx src/database/importarJson.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.3.0",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}

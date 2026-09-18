@@ -1,0 +1,11 @@
+[
+  {
+    "id": 4,
+    "nome": "charmander",
+    "tipos": [
+      "fire"
+    ],
+    "altura": 6,
+    "peso": 85
+  }
+]
