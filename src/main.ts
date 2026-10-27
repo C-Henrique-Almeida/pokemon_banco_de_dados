@@ -5,7 +5,6 @@ import { DatabaseError } from "./models/CustomErrors.js";
 
 async function main(): Promise<void> {
   try {
-    // Falha cedo e com mensagem clara caso o banco não esteja acessível.
     await testarConexao();
     console.log("[OK] Conectado ao PostgreSQL.\n");
   } catch (erro) {
